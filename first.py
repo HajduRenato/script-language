@@ -1,6 +1,8 @@
+print("Pls give me your name")
+name = input()
 
-age = 8
-print(age)
+print("Pls give me your age")
+age = int(input())
 
-name = "hello"
-print(name)
+print("Your name: {0}, age: {1}".format(name, age))
+print("Next year zou will be {0} years old".format(age + 1))
