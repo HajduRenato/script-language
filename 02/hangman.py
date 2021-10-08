@@ -2,6 +2,10 @@ from typing import List
 
 
 def get_all_index(text: str, word: str) -> List[int]:
+    if type(text) != str:
+        raise TypeError
+    if len(text) != 1:
+        raise ValueError
     # return [i for i, letter in enumerate(word) if letter == text]
     found_index = []
     for i in range(len(word)):
